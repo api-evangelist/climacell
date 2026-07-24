@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: climacell.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Jan 17 23:59:59 2027 GMT
+  cert_issuer: Amazon RSA 2048 M01
+  hsts: null
+  note: 301-redirects to https://www.tomorrow.io (legacy ClimaCell domain)
+- host: www.tomorrow.io
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 25 09:54:35 2026 GMT
+  hsts: null
+  note: successor Tomorrow.io host
+domains:
+- domain: climacell.co
+  dnssec: false
+  caa: []
+  spf: true
+  spf_note: 'includes tomorrow.io — confirms same organization'
+  dmarc: true
+  dmarc_policy: reject
+- domain: tomorrow.io
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: reject

@@ -1,22 +1,103 @@
 aid: climacell
 name: Climacell
-description: Climacell is a company surfaced as a portfolio company of canaan-partners and added to the
-  API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Climacell (styled ClimaCell) was a Boston-based weather-intelligence startup that pioneered a "Weather of Things"
+  approach — deriving hyperlocal precipitation and atmospheric conditions from wireless-signal attenuation, connected
+  devices, and its own proprietary numerical weather model — and exposed it through a developer-facing REST weather API.
+  Backed by Canaan Partners among others, the company rebranded to Tomorrow.io in 2020 and its legacy climacell.co
+  domain now 301-redirects to www.tomorrow.io. The surviving product is the Tomorrow.io v4 Weather API, which
+  supersedes the original ClimaCell v3 API and exposes 60+ hyperlocal data layers (core weather, air quality, pollen,
+  fire, flood, lightning, maritime, aviation, road) with realtime, forecast, historical, map-tile, and webhook-alert
+  access. This profile is the historical ClimaCell identity; the enriched, live provider record lives in the
+  api-evangelist tomorrow-io repository.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.tomorrow.io/favicon-32x32.png
+humanURL: https://www.climacell.co
 url: https://raw.githubusercontent.com/api-evangelist/climacell/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
+x-status: rebranded
+x-former-name: ClimaCell
+x-successor: tomorrow-io
+x-successor-name: Tomorrow.io
+x-legacy-domain: climacell.co
+x-live-domain: tomorrow.io
 x-backed-by:
 - canaan-partners
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: portfolio-lead-rebranded
+tags:
+- Weather
+- Forecast
+- Climate
+- Weather Intelligence
+- Air Quality
+- Precipitation
+- Weather of Things
+- Geospatial
+- Risk
+- Alerts
+kind: contract
+access: 3rd-Party
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
-tags:
-- Company
+modified: '2026-07-18'
 apis: []
+common:
+- url: security/climacell-domain-security.yml
+  type: DomainSecurity
+- url: packages/climacell-packages.yml
+  type: Packages
+- url: https://www.tomorrow.io
+  type: Portal
+  x-note: legacy climacell.co redirects here (successor Tomorrow.io)
+- url: https://docs.tomorrow.io
+  type: Documentation
+  x-note: successor Tomorrow.io developer docs
+- url: https://docs.tomorrow.io/reference/welcome
+  type: APIReference
+  x-note: successor Tomorrow.io API reference
+- url: https://docs.tomorrow.io/reference/getting-started
+  type: GettingStarted
+  x-note: successor Tomorrow.io
+- url: https://app.tomorrow.io/signup
+  type: SignUp
+  x-note: successor Tomorrow.io
+- url: https://www.tomorrow.io/pricing/
+  type: Pricing
+  x-note: successor Tomorrow.io
+- url: https://www.tomorrow.io/blog/
+  type: Blog
+  x-note: successor Tomorrow.io
+- url: https://support.tomorrow.io
+  type: Support
+  x-note: successor Tomorrow.io
+- url: https://www.tomorrow.io/legal/tos/
+  type: TermsOfService
+  x-note: successor Tomorrow.io
+- url: https://www.tomorrow.io/legal/privacy-policy/
+  type: PrivacyPolicy
+  x-note: successor Tomorrow.io
+- url: https://github.com/Tomorrow-IO-API
+  type: GitHubOrganization
+  x-note: successor Tomorrow.io
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

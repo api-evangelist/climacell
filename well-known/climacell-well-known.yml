@@ -1,0 +1,19 @@
+generated: '2026-07-18'
+method: searched
+host: https://climacell.co
+note: >-
+  climacell.co is the legacy ClimaCell domain and 301-redirects to https://www.tomorrow.io. No
+  /.well-known/ discovery documents are published on the legacy host; all probes returned 404. The
+  successor Tomorrow.io developer surface is documented in the tomorrow-io repository. Absence of these
+  documents is a valid, recorded result — no WellKnown pointer is wired because nothing returned 200.
+documents:
+- path: /.well-known/security.txt
+  status: 404
+- path: /.well-known/openid-configuration
+  status: 404
+- path: /.well-known/oauth-authorization-server
+  status: 404
+- path: /.well-known/api-catalog
+  status: 404
+- path: /.well-known/ai-plugin.json
+  status: 404

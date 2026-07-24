@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: npm + PyPI registry search for "climacell"
+note: >-
+  No first-party ClimaCell/Tomorrow.io client library was published under the ClimaCell name; the
+  official SDK/sample surface lives under the successor Tomorrow.io GitHub org (github.com/Tomorrow-IO-API)
+  and is catalogued in the tomorrow-io repository. The packages below are community-maintained wrappers of
+  the legacy ClimaCell v3 API — recorded here for historical completeness, all official:false.
+packages:
+- language: javascript
+  registry: npm
+  name: js-climacell-api
+  url: https://www.npmjs.com/package/js-climacell-api
+  install: npm install js-climacell-api
+  official: false
+  description: Community wrapper for the ClimaCell API for browser and Node.
+- language: python
+  registry: pypi
+  name: pyclimacell
+  url: https://pypi.org/project/pyclimacell/
+  install: pip install pyclimacell
+  official: false
+  description: Async Python 3.7+ community package to access the ClimaCell API (author raman325).
+  repo: https://github.com/raman325/pyclimacell
+- language: python
+  registry: pypi
+  name: climacell
+  url: https://pypi.org/project/climacell/
+  install: pip install climacell
+  official: false
+  description: Simple community wrapper for the ClimaCell API (author Dimitrios Strantsalis).
