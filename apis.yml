@@ -10,6 +10,17 @@ description: >-
   fire, flood, lightning, maritime, aviation, road) with realtime, forecast, historical, map-tile, and webhook-alert
   access. This profile is the historical ClimaCell identity; the enriched, live provider record lives in the
   api-evangelist tomorrow-io repository.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: unknown
