@@ -32,7 +32,7 @@ accessModel:
   source: []
   generated: '2026-07-22'
   method: derived
-image: https://www.tomorrow.io/favicon-32x32.png
+image: ''
 humanURL: https://www.climacell.co
 url: https://raw.githubusercontent.com/api-evangelist/climacell/refs/heads/main/apis.yml
 x-type: company
