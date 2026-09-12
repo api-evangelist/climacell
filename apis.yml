@@ -65,6 +65,8 @@ created: '2026-07-17'
 modified: '2026-07-18'
 apis: []
 common:
+- type: Website
+  url: https://www.tomorrow.io/
 - url: security/climacell-domain-security.yml
   type: DomainSecurity
 - url: packages/climacell-packages.yml
